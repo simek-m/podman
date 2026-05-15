@@ -30,12 +30,12 @@ This section is a historical account of what features were prioritized by quarte
 ### 2025 Q3 ####
 
 #### Releases ####
-- [ ] Podman 5.6
+- [x] Podman 5.6
 - [ ] Podman 6 (Spring 2026) High Level Design
 
 #### Features ####
 
-- [ ] Ongoing upgrades to support newer Docker API versions in the RESTFUl service
+- [ ] Ongoing upgrades to support newer Docker API versions in the RESTFUL service
 - [ ] Improvements to Quadlet documentation
 - [ ] Systemwide rootless user configuration
 - [ ] Improvements to the Windows installer
