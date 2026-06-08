@@ -122,6 +122,7 @@ else
 endif
 LIBPOD := ${PROJECT}/v6/libpod
 GOFLAGS ?= -trimpath
+TESTFLAGS := $(shell $(GO) test -c -race -o /dev/null ./pkg/errorhandling 2>&1 > /dev/null && echo --race)
 LDFLAGS_PODMAN ?= \
 	$(if $(GIT_COMMIT),-X $(LIBPOD)/define.gitCommit=$(GIT_COMMIT),) \
 	$(if $(BUILD_INFO),-X $(LIBPOD)/define.buildInfo=$(BUILD_INFO),) \
